@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: calc(100vh - 151px);
+    padding: 20px;
+}
+
+.descr {
+    margin-top: 30px;
+}
