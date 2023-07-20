@@ -1,8 +1,10 @@
-
+import dynamic from 'next/dynamic';
 import Header from '@/Components/Header';
-import Footer from '@/Components/Footer';
 
 import styles from './index.module.css';
+
+
+const Footer = dynamic(() => import('@/Components/Footer'), { ssr: false });
 
 const About = () => {
 

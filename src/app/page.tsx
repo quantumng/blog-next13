@@ -1,7 +1,9 @@
-import Image from 'next/image';
+'use client';
 import Header from '@/Components/Header';
-import Footer from '@/Components/Footer';
 import styles from './page.module.css'
+import dynamic from 'next/dynamic';
+
+const Footer = dynamic(() => import('@/Components/Footer'), { ssr: false });
 
 export default function Home() {
   return (
@@ -58,3 +60,4 @@ export default function Home() {
     </main>
   )
 }
+
