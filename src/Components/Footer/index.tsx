@@ -8,7 +8,7 @@ const Footer = () => {
     return <footer className={styles.footer}>
         
         {
-            window.location.hostname.includes('wuxiaoquan') && <div className={styles.beian}>
+            typeof window !== 'undefined' && window.location.hostname.includes('wuxiaoquan') && <div className={styles.beian}>
 
                 <a href="https://beian.miit.gov.cn/">粤ICP备2023047964号-1</a>
 
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
         }
         {
-            window.location.hostname.includes('drinkmorewarmwater') && <div className={styles.beian}>
+            typeof window !== 'undefined' && window.location.hostname.includes('drinkmorewarmwater') && <div className={styles.beian}>
 
                 <a href="https://beian.miit.gov.cn/">粤ICP备2023047964号-2</a>
 
